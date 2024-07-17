@@ -37,9 +37,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  // @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-  //   flex: unset !important;
-  // }
+  @media only screen and (min-width: 810px) and (max-width: 1080px) and (orientation: landscape) {
+    padding: 18px 60px 10px 60px;
+  }
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     flex: unset !important;
@@ -48,14 +48,12 @@ const Wrapper = styled.div`
     height: 100%;
   }
 
-
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
     flex: unset !important;
     padding: 120px 30px 350px;
     position: fixed;
     height: 100%;
   }
-  
 
   @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
     flex: unset !important;
@@ -64,7 +62,7 @@ const Wrapper = styled.div`
     height: 100%;
   }
 
-  @media only screen and (max-width: 512px) { 
+  @media only screen and (max-width: 512px) {
     position: fixed;
     height: 100%;
     flex: unset !important;
@@ -81,6 +79,10 @@ const Wrapper = styled.div`
 
   > div {
     flex-grow: 1;
+
+    @media only screen and (min-width: 900px) and (max-width: 1366px) and (orientation: landscape) {
+     flex-grow: unset
+    }
   }
 
   > button {
